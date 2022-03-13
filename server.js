@@ -27,6 +27,21 @@ app.post("/api/notes", (req,res) => {
 
 app.delete("/api/notes/:id", (req,res) => {
     const notes = JSON.parse(fs.readFileSync("./db/db.json"));
-    const delNote = notes.filter(rmvNote) => resmvNote.id !== req.params.id);
+    const delNote = notes.filter((rmvNote) => resmvNote.id !== req.params.id);
     fs.writeFileSync("./db/db.json", JSON.stringify(delNote));
-})
+});
+
+app.delete("./api/notes/:id",(req,res) => {
+    const notes = JSON.parse(fs.readFileSync("./db/db.json"));
+    const delNote = notes.filter((rmvNote) => rmvNote.id !== req.param.id);
+    fs.writeFileSync("./db/db.json", JSON.stringify(delNote));
+    res.json(delNote);
+});
+
+app.get("/", function (req,res) {
+    res.sendFile(path.join(_dirname, "/public/index.html"));
+});
+
+app.listen(PORT, function() {
+    console.log("app listening on PORT: " + PORT)
+});
