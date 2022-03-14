@@ -13,3 +13,10 @@ AS A small business owner I WANT to be able to write and save notes SO THAT I ca
 Javasscript
 NodeJS
 Express
+
+## Screenshots
+
+
+## Contribution
+
+Work completed by Abdi Hassan for UofT Bootcamp
