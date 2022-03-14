@@ -1,6 +1,6 @@
-###Keeping Notes
+### Keeping Notes
 
-##Goal of the Project
+## Goal of the Project
 
 This is an application where the user can write, save and delete notes. In this application the technologies used are express
 
